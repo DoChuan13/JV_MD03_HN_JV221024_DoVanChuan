@@ -120,9 +120,11 @@ public class Exam_B1 {
     //5. Thống kê số lượng phần tử chia hết cho 2 và 3 trong mảng
     public static void findNumberDivide2And3(int[] intArray, int[] sizeArray) {
         int size = sizeArray[0];
-        System.out.printf("Số lượng các phần tử chia hết cho cả 2 và 3 trong mảng là: ");
+        int count = 0;
+        System.out.printf("Danh sách các phần tử chia hết cho cả 2 và 3 trong mảng là: ");
         for (int i = 0; i < size; i++) {
             if (intArray[i] % 2 == 0 && intArray[i] % 3 == 0) {
+                count++;
                 System.out.print(intArray[i] + "\t");
             }
         }
